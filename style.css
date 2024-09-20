@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    background-color: #b35966;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rotate:hover {
+    transform: rotate(180deg);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.skew:hover {
+    transform: skew(5deg, 10deg);
+}
+.linear:hover {
+    transform: linear();
+}
+
+.translate:hover {
+    transform: translate(100px, -100px);
+}
